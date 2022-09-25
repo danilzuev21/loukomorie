@@ -1,6 +1,5 @@
 .price {
     .swiper-slide {
-        // width: 300px;
         .card-price {
 
             margin: 0 auto;
@@ -74,13 +73,13 @@
 
         }
     }
-    &--crown {
-        &::before {
+    &--сrown {
+        &::after {
             content: '';
 
             position: absolute;
-            top: 1px;
-            left: 1px;
+            top: -37px;
+            left: 210px;
 
             display: block;
             width: 70px;

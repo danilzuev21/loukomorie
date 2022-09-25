@@ -1,12 +1,14 @@
 const OpenModalFormBtn = document.querySelectorAll('.btn-js')
 const OpenModal = document.querySelectorAll('.modal')
-const OpenModalForm = document.querySelector('.modal-fb')
+const OpenModalFB = document.querySelector('.modal-fb')
+const OpenModalGS = document.querySelector('.modal-gs')
 const OpenModalClose = document.querySelectorAll('.modal__close')
 const upBtn = document.querySelector('.footer__btn')
 const kittensModalBtn = document.querySelector('.btn-js-info-kittens')
 const scientistModalBtn = document.querySelector('.btn-js-info-at-scientist')
 const kittensModal = document.querySelector('.modal-kittens')
 const scientistModal = document.querySelector('.modal-at-scientist')
+const modalForm = document.querySelector('.modal-fb__form')
 const bodyElement = document.body 
 
 
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     kittensModalBtn.addEventListener('click', () => {
+        OpenModal.forEach(el => el.classList.remove('modal--active'))
         kittensModal.classList.add('modal--active')
         bodyElement.scrollIntoView({
             behavior: 'smooth',
@@ -56,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
     scientistModalBtn.addEventListener('click', () => {
+        OpenModal.forEach(el => el.classList.remove('modal--active'))
         scientistModal.classList.add('modal--active')
         bodyElement.scrollIntoView({
             behavior: 'smooth',
@@ -73,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     OpenModalFormBtn.forEach((btn) =>  {
         btn.addEventListener('click', () => {
             OpenModal.forEach(el => el.classList.remove('modal--active'))
-            OpenModalForm.classList.add('modal--active')
+            OpenModalFB.classList.add('modal--active')
 
             bodyElement.scrollIntoView({
                 behavior: 'smooth',
@@ -87,17 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    modalForm.addEventListener('submit', (event) => {
+        event.preventDefault()
+        OpenModal.forEach(el => el.classList.remove('modal--active'))
+        OpenModalGS.classList.add('modal--active')
+    })
 
-    // btnOpenPopup.forEach(function(event) {
-    //     event.addEventListener('click', function(event) {
-    //         popupMain.classList.add('franchise-um-popup--active')
 
-    //         popupMain.scrollIntoView({
-    //             behavior: 'smooth',
-    //             block: 'start'
-    //         })
-    //     })
-    // })
 });
 
 

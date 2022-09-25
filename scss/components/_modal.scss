@@ -110,6 +110,10 @@
     &__checkbox {
         display: none;
     }
+
+    &__checkbox:checked +  .modal-fb__checkbox-elem::before {
+        opacity: 1;
+    }
     &__checkbox-text {
         text-align: left;
         font-weight: 400;
@@ -126,12 +130,30 @@
         }
     }
     &__checkbox-elem {
+        position: relative;
         display: flex;
         min-width: 16px;
         min-height: 16px;
         border: 1px solid #1F56E2;
         border-radius: 4px;
         margin-right: 12px;
+        &::before {
+            content: "";
+
+            position: absolute;
+            top:1px;
+            left: 2px;
+
+            display: block;
+            width: 10px;
+            height: 16px;
+
+            background-image: url("./images/svg/ok.svg");
+            background-repeat: no-repeat;
+
+            transition-duration: .5s;
+            opacity: 0;
+        }
     }
 }
 
@@ -146,7 +168,6 @@
 
 .modal-gs {
     min-height: 382px;
-    // display: nonr;
     justify-content: center;
     align-items: center;
     background-image: url("./images/svg/modal-bg-fb-mob.svg");

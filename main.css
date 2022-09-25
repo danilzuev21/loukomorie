@@ -1126,11 +1126,11 @@ input[type="radio"].visually-hidden {
   border-radius: 0px 8px 8px 0px;
 }
 
-.card-price--crown::before {
+.card-price--сrown::after {
   content: '';
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: -37px;
+  left: 210px;
   display: block;
   width: 70px;
   height: 70px;
@@ -1697,6 +1697,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.modal-fb__checkbox:checked + .modal-fb__checkbox-elem::before {
+  opacity: 1;
+}
+
 .modal-fb__checkbox-text {
   text-align: left;
   font-weight: 400;
@@ -1713,6 +1717,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-fb__checkbox-elem {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1721,6 +1726,21 @@ input[type="radio"].visually-hidden {
   border: 1px solid #1F56E2;
   border-radius: 4px;
   margin-right: 12px;
+}
+
+.modal-fb__checkbox-elem::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  display: block;
+  width: 10px;
+  height: 16px;
+  background-image: url("./images/svg/ok.svg");
+  background-repeat: no-repeat;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  opacity: 0;
 }
 
 @media (min-width: 768px) {
