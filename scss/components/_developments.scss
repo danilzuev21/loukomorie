@@ -1,0 +1,106 @@
+.developments {
+    max-width: 1076px;
+    margin: 0 auto;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        margin-bottom: 28px;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .developments {
+        &__list {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &__item {
+            max-width: 510px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+  
+@media (min-width: $screen-desktop) {
+}
+
+.card-dev {
+    width: 360px;
+    padding: 20px 0 0;
+    
+    border-radius: 20px;
+    &__img {
+        width: 351px;
+        height: 239px;
+        margin: 0 auto;
+    }
+    &__wrap {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__info {
+        margin-left: 24px;
+        margin-bottom: 12px;
+        li:first-child {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+
+            color: #FFFFFF;
+        }
+        li:last-child {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+    }
+    &__btn {
+        width: 149px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+        background: #FD8342;
+        border-radius: 20px 0px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            color: #FD8342;
+            background-color: #FFFFFF;
+        }
+        &:active {
+            color: #FFFFFF;
+            background-color: #FD8342;
+        }
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .card-dev {
+        max-width: 510px;
+        width: 100%;
+    }
+}
+
+  
+@media (min-width: $screen-desktop) {
+
+}
+  

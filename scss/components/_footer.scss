@@ -1,0 +1,130 @@
+.footer {
+    position: relative;
+    background: linear-gradient(206.34deg, #35BAD3 -1.18%, #55CAB4 110.86%, #00AA78 166.88%);
+    padding-top: 30px;
+    padding-bottom: 24px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__list-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        position: relative;
+        padding-left: 39px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #0D4E5C;
+        margin-bottom: 18px;
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+            width: 24px;
+            height: 24px;
+
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(1) {
+            &::before {
+                background-image: url('./images/png/location.png');
+            }
+        }
+        &:nth-child(2) {
+            &::before {
+                background-image: url('./images/png/call.png');
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                background-image: url('./images/png/mail.png');
+            }
+        }
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+    
+            color: #0D4E5C;
+        }
+    }
+    &__item-2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #0D4E5C;
+        margin-bottom: 18px;
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+            
+            text-decoration-line: underline;
+            
+            color: #003EC0;
+        }
+    }
+    &__btn {
+        position: absolute;
+        bottom: 13px;
+        right: 10px;
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.4);
+        border: 2px solid #0B7656;
+        border-radius: 50%;
+        &::before {
+            content: "";
+            
+            position: absolute;
+            top: 10px;
+            left: 14px;
+        
+            display: block;
+            width: 16px;
+            height: 28px;
+
+            background-image: url('./images/png/arrow.png');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .footer {
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 29px;
+            li {
+               flex-basis: 30%;
+            }
+        }
+        &__list-2 {
+            display: flex;
+            flex-direction: row;
+            li {
+                flex-basis: 30%;
+            }
+            li:first-child {
+                order: 2;
+            }
+            li:last-child {
+                
+                order: 1;
+            }
+        }
+    }
+}

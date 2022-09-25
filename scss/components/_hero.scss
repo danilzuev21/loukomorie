@@ -1,0 +1,302 @@
+.hero {
+    padding-top: 100px;
+    height: 1684px;
+
+    background-image:url("./images/svg/bg-hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__wrapp {
+        max-width: 1076px;
+        margin: 0 auto;
+    }
+    &__wrap-1 {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__title {
+        margin-bottom: 27px;
+        font-family: $font-family--Amatic;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 78px;
+        /* identical to box height, or 109% */
+
+
+        color: #FFFFFF;
+    }
+    &__text-1 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+    &__text-2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+    &__btn-1 {
+        display: none;
+    }
+    &__text-3 {
+        display: none;
+    }
+    &__social {
+        li {
+            margin-bottom: 15px;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 38px;
+            height: 38px;
+            background: rgba(255, 255, 255, 0.3);
+
+            color: #FFFFFF;
+            border-radius: 50%;
+            transition-duration: .5s;
+            &:hover,
+            &:focus {
+                background: #B0E5DB;
+            }
+            &:active {
+                background: #40B5A2;
+            }
+        }
+    }
+    &__wrap-2 {
+        position: relative;
+        margin-bottom: 79px;
+        button {
+            width: 228px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        div:last-child {
+            position: relative;
+            max-width: 429px;
+            padding: 11px 0;
+            padding-left: 41px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #444545;
+
+            background: #52C9B8;
+            border-radius: 8px; 
+            &::before {
+                content: "";
+
+                position: absolute;
+                top:-9px;
+                left:0;
+
+                display: block;
+                width: 26px;
+                height: 39px;
+
+                background-image: url("./images/png/elem.png");
+                background-repeat: no-repeat;
+
+            }
+        }
+    }
+    &__wrap-3 {
+
+    }
+    &__w3-img {
+        display: none;
+    }
+    &__card {
+        max-width: 611px;
+        padding: 32px 20px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 30px;
+    }
+    &__card-text {
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+
+        color: #353639
+    }
+    &__card-title {
+        margin-bottom: 12px;
+        font-family: $font-family--Amatic;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 120%;
+        /* or 55px */
+
+
+        color: #09805D;
+    }
+    &__card-text-2 {
+        margin-bottom: 32px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+
+        color: #09805D;
+    }
+    &__card-btn {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: $screen-table) {
+    .hero {
+        &__wrapp {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__wrap-1 {
+            margin-top: 100px;
+            justify-content: flex-start;
+            button {
+                display: block;
+            }
+            .hero__wrap-1-text {
+                display: block;
+            }
+
+        }
+        &__btn-1 {
+            display: flex;
+            margin-bottom: 100px;
+            button {
+                width: 228px;
+            }
+        }
+        &__text-3 {
+            display: flex;
+            p {
+                position: relative;
+                max-width: 429px;
+                padding: 11px 0;
+                padding-left: 41px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+    
+    
+                color: #444545;
+    
+                background: #52C9B8;
+                border-radius: 8px; 
+                &::before {
+                    content: "";
+    
+                    position: absolute;
+                    top:-9px;
+                    left:0;
+    
+                    display: block;
+                    width: 26px;
+                    height: 39px;
+    
+                    background-image: url("./images/png/elem.png");
+                    background-repeat: no-repeat;
+    
+                }
+            }
+        }
+        &__list {
+            order: 2;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 128px;
+            line-height: 78px;
+        }
+        &__text-1 {
+            margin-bottom: 23px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            /* identical to box height, or 30px */
+
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        &__text-2 {
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        &__social {
+            order: 1;
+            margin-right: 28px;
+            li {
+            }
+            a {
+            }
+        }
+        &__wrap-2 {
+            button {
+                display: none;
+            }
+            div:last-child {
+                display: none;
+                &::before {
+    
+                }
+            }
+        }
+
+        &__card {
+            padding: 56px 68px;
+        }
+        &__card-text {
+        }
+        &__card-title {
+        }
+        &__card-text-2 {
+
+        }
+        &__card-btn {
+        }
+    }
+    
+}
+
+  
+@media (min-width: $screen-desktop) {
+    .hero {
+        height: 1825px;
+        &__wrap-3 {
+            max-width: 1076px;
+            margin: 0 auto;
+            display: flex;
+        }
+        &__w3-img {
+            display: block;
+        }
+    }
+}
+  

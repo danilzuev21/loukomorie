@@ -1,0 +1,20 @@
+.timetable {
+    &__wrap {
+        text-align: center;
+        box-shadow: -11px 15px 29px rgba(114, 217, 192, 0.15);
+        border-radius: 30px;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .timetable {
+        &__wrap {
+            box-shadow: none;
+            border-radius: none;
+        }
+    }
+}
+@media (min-width: $screen-desktop) {
+
+}

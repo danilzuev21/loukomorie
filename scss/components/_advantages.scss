@@ -1,0 +1,131 @@
+.advantages {
+    &__slider {
+        // text-align: center;
+        // width: 600px;
+        // height: 421px;
+        // overflow: hidden;
+        padding-bottom: 50px;
+        .card {
+            margin:  0 auto;
+        }
+    }
+    &__pagination {
+        bottom: 20px    ;
+    }
+    &__list {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1074px;
+        margin: 0 auto;
+    }
+    &__item { 
+        margin-bottom: 54px;
+        &:nth-child(1) {
+            .card:before {
+                background-image: url('./images/png/ad-1.png');
+            }
+        }
+        &:nth-child(2) {
+            .card:before {
+                width: 60px;
+                height: 60px;
+                background-image: url('./images/png/ad-2.png');
+            }
+        }
+        &:nth-child(3) {
+            .card:before {
+                background-image: url('./images/png/ad-3.png');
+            }
+        }
+        &:nth-child(4) {
+            .card:before {
+                width: 55px;
+                height: 55px;
+                background-image: url('./images/png/ad-4.png');
+            }
+        }
+        &:nth-child(5) {
+            .card:before {
+                width: 52px;
+                height: 46px;
+                background-image: url('./images/png/ad-5.png');
+            }
+        }
+        &:nth-child(6) {
+            .card:before {
+                width: 57px;
+                height: 57px;
+                background-image: url('./images/png/ad-6.png');
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .advantages {
+        &__slider {
+            display: none;
+        }
+        &__list {
+            display: flex;
+        }
+        &__item { 
+    
+        }
+    }
+    
+}
+
+@media (min-width: $screen-desktop) {
+    .advantages {
+        &__slider {
+    
+        }
+        &__list {
+            
+        }
+        &__item { 
+    
+        }
+    }
+    
+}
+
+.card {
+    position: relative;
+    width: 321px;
+    height: 383px;
+    padding: 100px 11px 14px 24px;
+    background: #FFFFFF;
+    box-shadow: -11px 15px 29px rgba(114, 217, 192, 0.15);
+    border-radius: 30px;
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #333333;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #404040;
+    }
+    &::before {
+        content: "";
+    
+        position: absolute;
+        top: 28px;
+        left: 28px;
+
+        display: block;
+        width: 52px;
+        height: 52px;
+
+        background-repeat: no-repeat;
+    }
+}
+
+

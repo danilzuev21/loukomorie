@@ -1,0 +1,164 @@
+.modal {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    max-width: 860px;
+    width: 100%;
+    padding: 40px 20px 32px;
+    
+    background-color: #fff;  
+    display: none;
+    background-image: url("./images/svg/moda-mobl.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    border-radius: 20px;
+    &__close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #6D6D77;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #EEF9FF;
+        box-shadow: 1px 6px 20px rgba(128, 197, 219, 0.2);
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: #94CDD8;
+        }
+        &:active {
+            background: #EEF9FF;
+        }
+
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* or 24px */
+
+
+        /* 4-main text */
+
+        color: #6D6D77;
+    }
+    &--active {
+        display: block;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .modal {
+        background-image: url("./images/svg/modal.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 50%;
+        padding: 54px 40px 60px;
+        min-height: 600px;
+        transform: translate(-50%);
+    }
+    
+}
+
+  
+@media (min-width: $screen-desktop) {
+    .modal {
+
+        padding: 54px 80px 60px;
+    }
+}
+
+.modal-fb {
+    // display: block;
+    background-image: url("./images/svg/modal-bg-fb-mob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrap {
+        margin-bottom: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__input {
+        padding: 15px 25px;
+        background: #FFFFFF;
+        border: 1px solid #BACCD9;
+        border-radius: 50px;
+        width: 300px;
+        margin-bottom: 16px;
+    }
+    &__btn {
+        width: 300px;
+        margin-top: 40px;
+        margin-bottom: 22px;
+    }
+    &__label {
+        display: flex;
+        max-width: 386px;
+        margin-left: 37px;
+        align-items: flex-start;
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox-text {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #464646;
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #1F56E2;
+        }
+    }
+    &__checkbox-elem {
+        display: flex;
+        min-width: 16px;
+        min-height: 16px;
+        border: 1px solid #1F56E2;
+        border-radius: 4px;
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .modal-fb {
+        background-image: url("./images/svg/modal-bg-fb.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.modal-gs {
+    min-height: 382px;
+    // display: nonr;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/svg/modal-bg-fb-mob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: $screen-table) {
+    .modal-gs {
+        min-height: 600px;
+        background-image: url("./images/svg/modal-bg-fb.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

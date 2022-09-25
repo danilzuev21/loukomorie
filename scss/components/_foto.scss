@@ -1,0 +1,24 @@
+.foto {
+    height: 678px;
+    background-image: url("./images/svg/bg-foto-mob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__slider-foto {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .foto {
+        height: 1186px;
+        background-image: url("./images/svg/bg-foto.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media (min-width: $screen-desktop) {
+
+}
