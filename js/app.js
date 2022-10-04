@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper1 = new Swiper('.advantages__slider', {
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
           },
     });
     const swiper2 = new Swiper('.price__slider', {
         pagination: {
             el: ".swiper-pagination",
+            clickable: true,
           },
     });
     const swiper3 = new Swiper('.foto__slider', {
@@ -46,7 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         pagination: {
             el: ".swiper-pagination",
-          },
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 
 

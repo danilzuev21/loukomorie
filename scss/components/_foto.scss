@@ -8,15 +8,65 @@
         justify-content: center;
         padding-bottom: 50px;
     }
+    &__btn-wrap {
+        display: none;
+    }
+
 }
 
+.swiper-button {
+    position: relative;
+    width: 48px;
+    height: 48px;
 
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #0B7656;
+    border-radius: 50%;
+    &::after {
+        content: "";
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 27px;
+        height: 15px;
+
+        background-repeat: no-repeat;
+    }
+}
+
+.swiper-button-prev {
+    &::after {
+        background-image: url("./images/png/button-prev.png");
+    }
+}
+.swiper-button-next {
+    &::after {
+        background-image: url("./images/png/button-next.png");
+    }
+}
 @media (min-width: $screen-table) {
     .foto {
         height: 1186px;
         background-image: url("./images/svg/bg-foto.svg");
         background-repeat: no-repeat;
         background-size: cover;
+        &__btn-wrap {
+            position: absolute;
+            top: 290px;
+            left: 50%;
+            display: flex;
+            width: 180px;
+            justify-content: space-between;
+            transform: translate(-50%);
+        }
+        &__pagination {
+            display: none;
+        }
+        &__slider {
+            padding-bottom: 40px;
+        }
     }
 }
 @media (min-width: $screen-desktop) {
