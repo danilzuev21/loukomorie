@@ -10,89 +10,122 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="css/um-icon-style.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+    
     <header class="header">
         <div class="container">
-            <div class="header__wrap">
-                <ul class="header__adress">
-                    <li>Санкт-Петербург,</li>
-                    <li>м. “Чернышевская”, ул. Маяковского, 37 В</li>
+            <div class="menu">
+                <button  type="button" class="menu__btn-close" >
+                    <i class="icon-close"></i>
+                </button>
+                <div class="menu__title">Меню</div>
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#section1">Почему мы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#section2">Наша команда</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#section3">Стоимость</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#section4">Программы развития</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#section5">Расписание</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#section6">Фотогалерея</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#section7">Контакты</a></li>
                 </ul>
-                <a href="#" class="header__logo">
-                    <img src="./images/svg/logo.svg" alt="">
-                </a>
-                <ul class="header__feedback">
-                    <li>
-                        <a href="tel:+78123892209">+7 (812) 389-22-09</a>
-                    </li>
-                    <li>
-                        <a href="mailto:balticakidssad@yandex.ru">balticakidssad@yandex.ru</a>
-                    </li>
-                </ul>
-                <a href="tel:+78123892209" class="header__call">
-                    <span class="visually-hidden">+7 (812) 389-22-09</span>
-                </a>
-
             </div>
         </div>
     </header>
-
 
     <main>
 
         <section class="hero mb-45 mb-t-14">
             <div class="container pos-rel">
+                <div class="hero__header">
+                    <a href="#" class="hero__header-logo bg-cirgle">
+                        <img src="./images/png/logo-mob-2.png" alt="">
+                    </a>
+                    <ul class="hero__header-feedback">
+                        <li>
+                            <a href="tel:+79291090808">+7 (929) 109-08-08</a>
+                        </li>
+                        <li>
+                            <a href="mailto:balticakidssad@yandex.ru">balticakidssad@yandex.ru</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="hero__header-menu-burger menu-burger blue-bg-1B4AC5 d-flex flex-column justify-content-center align-items-center">
+                        <span></span>
+                        <span class="my-1"></span>
+                        <span></span>
+                    </button>
+                    <div class="hero__header-adress">Санкт-Петербург, м. “Чернышевская”, ул. Маяковского, 37 В</div>
+                </div>
                 <div class="hero__wrapp">
-                    <div class="hero__wrap-1">
-                        <ul class="hero__list">
-                            <li class="hero__text-1">Частный детский сад </li>
-                            <li class="hero__title" >ЛУКОМОРЬЕ</li>
-                            <li class="hero__text-2">Открыт набор на 2022 – 2023 года</li>
-                            <li class="hero__btn-1">
-                                <button class="btn btn-js">Обратный звонок</button>
-                            </li>
-                            <li class="hero__text-3">
-                                <p>Возможна оплата материнским капиталом</p>
-                            </li>
-                        </ul>
-                        <ul class="hero__social">
-                            <li>
-                                <a href="https://wa.me/79291090808">
-                                    <i class="icon-watsapp"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://t.me/+79291090808">
-                                    <i class="icon-telegram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                
-                                <a href="viber://chat?number=%2B79291090808">
-                                    <i class="icon-viber"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="hero__wrap-1" style="position: relative; z-index: 9999;">
+                        <div class="d-flex">
+
+                            <ul class="hero__social me-2">
+                                <li>
+                                    <a href="https://wa.me/79291090808">
+                                        <i class="icon-watsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/+79291090808">
+                                        <i class="icon-telegram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    
+                                    <a href="viber://chat?number=%2B79291090808">
+                                        <i class="icon-viber"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="hero__list">
+                                <li class="hero__text-1">Частный детский сад </li>
+                                <li class="hero__title" >ЛУКОМОРЬЕ</li>
+                                <li class="hero__text-2">Открыт набор на 2022 – 2023 года</li>
+                            </ul>
+                        </div>
+                        <div class="hero__wrap-1-bonus">
+                            <ul class="row">
+                                <li class="col-md-6">
+                                    <p>Оплачивайте сад материнским капиталом</p>
+                                </li>
+                                <li class="col-md-6">
+                                    <p>Приходите на пробное занятие</p>
+                                </li>
+                                <li class="col-md-12 mx-md-auto">
+                                    <p>Всестороннее развитие вместе с нами</p>
+                                </li>
+                            </ul>
+                            <button class="btn btn-js mx-md-auto ">Обратный звонок</button>
+                        </div>
                     </div>
-                    <div class="hero__wrap-2">
+                    <div class="hero__wrap-2"   >
+                        <ul class="hero__wrap-2-bonus">
+                            <li class="">
+                                <p>Оплачивайте сад материнским капиталом</p>
+                            </li>
+                            <li class="">
+                                <p>Приходите на пробное занятие</p>
+                            </li>
+                            <li class="">
+                                <p>Всестороннее развитие вместе с нами</p>
+                            </li>
+                        </ul>
                         <button class="btn btn-js">Обратный звонок</button>
-                        <div>
+                        <div class="bg-cirgle-big">
                             <picture>
-                                <source srcset="./images/png/wood-dest.png" media="(min-width: 1280px)">
-                                <img class="um-investor-lp-info__img" src="./images/png/wood.png" alt="фото"/>
+                                <source srcset="./images/png/wood-dest.png" media="(min-width: 768px)">
+                                <img class="um-investor-lp-info__img " src="./images/png/wood.png" alt="фото"/>
                             </picture>
                         </div>
-                        <div>
-                            <p>Возможна оплата материнским капиталом</p>
-                        </div> 
                     </div>
                 </div>
+
                 <div class="hero__wrap-3">
                     <div class="hero__w3-img">
                         <img class="um-investor-lp-info__img" src="./images/png/hero_child.png" alt="фото"/>
@@ -101,7 +134,7 @@
                         <p class="hero__card-text">Наша работа —  не просто присмотр, безопасность и развитие сегодня. Наша миссия — помогать детям расти счастливыми и адаптированными к жизни, открытых к знаниям, понимающих себя и свои желания, самостоятельных, с правильной мотивацией к обучению, уважающих свои и чужие личные границы, для этого мы открыли Лукоморье!</p>
                         <h3 class="hero__card-title">ПРИХОДИТЕ ЗНАКОМИТЬСЯ</h3>
                         <p class="hero__card-text-2">«ЛУКОМОРЬЕ» – мягкое и бережное развитие Вашего ребенка</p>
-                        <button class="hero__card-btn btn btn-js">Записаться на экскурсию прямо сейчас</button>
+                        <button class="hero__card-btn btn btn-js">Получить экскурсию</button>
                     </div>
                 </div>
                 <picture>
@@ -111,7 +144,7 @@
             </div>
         </section>
 
-        <section class="advantages mb-97 mb-t-151">
+        <section class="advantages" id="section1">
 
             <div class="container">
 
@@ -202,12 +235,64 @@
                 </ul>
 
                 <div class="center">
-                    <button class="btn btn--w-348 btn-js">Позвоните мне</button>
+                    <button class="btn btn--w-348 btn-js">Хочу в Лукоморье</button>
                 </div>
             </div>
         </section>
 
-        <section class="price mb-60 mb-t-111">
+        <section class="our-team" id="section2">
+            <div class="container">
+                <div class="our-team__title">
+                    <h2 class="el-line">наша команда</h2>
+                </div>
+                <div class="tither__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <picture>
+                                    <img class="um-investor-lp-info__img" src="./images/png/titcher-1-mob.png" alt="фото"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <picture>
+                                    <img class="um-investor-lp-info__img" src="./images/png/titcher-2-mob.png" alt="фото"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <picture>
+                                    <img class="um-investor-lp-info__img" src="./images/png/titcher-3-mob.png" alt="фото"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <picture>
+                                    <img class="um-investor-lp-info__img" src="./images/png/titcher-4-mob.png" alt="фото"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <picture>
+                                    <img class="um-investor-lp-info__img" src="./images/png/titcher-5-mob.png" alt="фото"/>
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination price__pagination foto__pagination"></div>
+                </div>
+                <div class="foto__btn-wrap">
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price mb-60 mb-t-111" id="section3">
             <div class="container pos-rel">
                 <picture>
                     <source srcset="./images/svg/b2.svg" media="(min-width: 1280px)">
@@ -399,7 +484,29 @@
             </div>
         </section>
 
-        <section class="developments mb-60 mb-t-111">
+        <section class="mat-cap mb-60 mb-t-111" >
+            <div class="container pos-rel">
+                <picture>
+                    <source srcset="./images/svg/c1.svg" media="(min-width: 1280px)">
+                    <img class="pos-abs pos-dest-c pos-c" src="./images/svg/c1.svg" alt="фото"/>
+                </picture>
+                <div class="text-center mb-38 mb-t-75">
+                    <h2 class="title-h2">Оплатите детский сад материнским капиталом</h2>
+                </div>
+                <div class="mat-cap__wrapper">
+                    <ul>
+                        <li>Лукоморье - частный детский сад с лицензией на оказание  образовательных услуг</li>
+                        <li>Мы поможем собрать необходимые документы</li>
+                        <li>Оплата поступит в Лукоморье напрямую от Пенсионного фонда РФ</li>
+                    </ul>
+                    <div class="center">
+                        <button class="btn btn--w-348 btn-js">Узнать подробнее</button>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="developments mb-60 mb-t-111" id="section4">
             <div class="container pos-rel">
                 <picture>
                     <source srcset="./images/svg/c1.svg" media="(min-width: 1280px)">
@@ -442,6 +549,70 @@
             </div>
         </section>
 
+        <section class="roboxod">
+            <div class="container">
+                <div class="roboxod__logo text-center text-lg-start bg-cirgle-2">
+                    <img class="um-investor-lp-info__img" src="./images/png/logo-roboxod.png" alt="фото"/>
+                </div>
+                <div class="row mb-5">
+                    <div class="roboxod__block1 col-lg-6 text-center">
+                        <picture>
+                            <source srcset="./images/png/roboxod-img2.png" media="(min-width: 1280px)">
+                            <img class="um-investor-lp-info__img" src="./images/png/roboxod-img1.png" alt="фото"/>
+                        </picture>
+                    </div>
+                    <div class="col-lg-6 pt-lg-5 mt-lg-5">
+                        <div class="roboxod__title">УРОКИ РОБОТОТЕХНИКИ</div>
+                        <div class="roboxod__text">Курсы для детей по разработке, конструированию, прототипированию и программированию роботов</div>
+                        <div class="center">
+                            <button class="btn btn--w-348 btn-js">Бесплатное пробное занятие</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roboxod__slider swiper mb-55">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <img src="./images/png/roboxod-foto-1.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <img src="./images/png/roboxod-foto-2.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <img src="./images/png/roboxod-foto-3.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <img src="./images/png/roboxod-foto-1.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <img src="./images/png/roboxod-foto-2.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="foto__slider-foto">
+                                <img src="./images/png/roboxod-foto-3.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination price__pagination foto__pagination"></div>
+                </div>
+                <div class="foto__btn-wrap">
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
+                </div>
+
+            </div>
+        </section>
+
         <section class="extra-lessons mb-75 mb-t-117">
             <div class="container pos-rel ">
                 <picture>
@@ -454,14 +625,11 @@
                 <div class="extra-lessons__wrap">
                     <ul class="extra-lessons__list mb-t-75">
                         <li class="extra-lessons__item">Подготовка к школе</li>
-                        <li class="extra-lessons__item">Музыкальные занятия</li>
-                        <li class="extra-lessons__item">Английский язык</li>
-                        <li class="extra-lessons__item">Занятия с психологом</li>
-                        <li class="extra-lessons__item">Сказкотерапия</li>
-                        <li class="extra-lessons__item">Бэби-Йога</li>
+                        <li class="extra-lessons__item">Диагностика подготовки к школе</li>
+                        <li class="extra-lessons__item w-50">Индивидуальные занятия с психологом, нейропсихолом</li>
                         <li class="extra-lessons__item">Искусство. Арт-студия</li>
                         <li class="extra-lessons__item">Конструирование</li>
-                        <li class="extra-lessons__item">Мама и малыш </li>
+                        <li class="extra-lessons__item">Мама и малыш</li>
                     </ul>
                     <div class="extra-lessons__img">
                         <img src="./images/svg/child.svg" alt="imges">
@@ -471,7 +639,7 @@
 
         </section>
 
-        <section class="timetable">
+        <section class="timetable" id="section5">
             <div class="container pos-rel ">
                 <picture>
                     <source srcset="./images/svg/f2.svg" media="(min-width: 1280px)">
@@ -489,7 +657,7 @@
             </div>
         </section>
 
-        <section class="foto pt-t-178">
+        <section class="foto pt-t-178" id="section6">
             <div class="container pos-rel">
                 <picture>
                     <source srcset="./images/svg/r2.svg" media="(min-width: 1280px)">
@@ -584,28 +752,126 @@
             </div>
         </section>
 
-        <section class="feedback mb-97 mb-t-51 mb">
-            <div class="container">
-                <div class="feedback__bg">
-                    <ul class="feedback__list">
-                       <li class="feedback__text">Запишитесь на экскурсию прямо сейчас</li>
+        <section class="feedback mb-97 mb-t-51 position-relative" id="section7">
+            <div class="container position-relative">
+                <div class="feedback__bg row">
+                    <ul class="feedback__list col-lg-6">
+                       <li class="feedback__text-1">Запишитесь на экскурсию прямо сейчас</li>
                        <li class="mt-16">
                            <button class="btn btn--w-413 btn-js">Записаться на экскурсию</button>
                        </li>
                     </ul>
-                    <ul class="feedback__list">
+                    <ul class="feedback__list col-lg-6 el-green">
                        <li class="feedback__text">По всем вопросам позвоните по телефону</li>
                        <li>
-                           <a href="tel:+78123892209">+7 (812) 389-22-09</a>
+                           <a href="tel:+79291090808">+7 (929) 109-08-08</a>
                        </li>
-                       <li class="feedback__text">или закажите обратный звонок</li>
-                       <li class="mt-16">
-                           <button class="btn btn--w-413 btn-js">Обратный звонок</button>
-                       </li>
+                       <li class="feedback__text w-100">или закажите <a href="#" class="feedback__text-2 btn-js">обратный звонок</a></li>
                     </ul>
                 </div>
+                <div class="feedback__social mb-5" >
+                    <h2 class="el-green">Мы в социальных сетях</h2>
+                    <ul>
+                        <li><a href="#">
+                            <img src="./images/png/telegram-icon.png" alt="">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="./images/png/vk-icon.png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="w-75 mx-auto">
+                    <div class="foto__slider swiper mb-55 d-lg-none">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-news">
+                                    <img src="./images/png/news1.png" alt="">
+                                    <div class="d-flex justify-content-beetwen">
+                                        <p>Упражнения для развития памяти ребёнка</p>
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-news">
+                                    <img src="./images/png/new2.png" alt="">
+                                    <div class="d-flex justify-content-beetwen">
+                                        <p> Адаптация к детскому саду</p>
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-news">
+                                    <img src="./images/png/new3.png" alt="">
+                                    <div class="d-flex justify-content-beetwen">
+                                        <p>Как очень просто научить ребёнка рисовать животных?</p>
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-news">
+                                    <img src="./images/png/new4.png" alt="">
+                                    <div class="d-flex justify-content-beetwen">
+                                        <p>10 правил крепкого сна</p>
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination price__pagination foto__pagination"></div>
+                    </div>  
+                    <div class="row mb-3 ry-3 d-none d-lg-flex justify-content-around">
+                        <div class="col-6">
+                            <div class="card-news">
+                                <img src="./images/png/news1.png" alt="">
+                                <div class="d-flex justify-content-beetwen">
+                                    <p>Упражнения для развития памяти ребёнка</p>
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-news">
+                                <img src="./images/png/new2.png" alt="">
+                                <div class="d-flex justify-content-beetwen">
+                                    <p> Адаптация к детскому саду</p>
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around d-none d-lg-flex">
+                        <div class="col-6">
+                            <div class="card-news">
+                                <img src="./images/png/new3.png" alt="">
+                                <div class="d-flex justify-content-beetwen">
+                                    <p>Как очень просто научить ребёнка рисовать животных?</p>
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-news">
+                                <img src="./images/png/new4.png" alt="">
+                                <div class="d-flex justify-content-beetwen">
+                                    <p>10 правил крепкого сна</p>
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            <picture>
+                <source srcset="./images/png/icon-1-dest.png" media="(min-width: 768px)">
+                <img class="icon icon-1" src="./images/png/icon-1-mob.png" alt="фото"/>
+            </picture>
+            <picture>
+                <source srcset="./images/png/icon-2-dest.png" media="(min-width: 768px)">
+                <img class="icon icon-2" src="./images/png/icon-2-mob.png" alt="фото"/>
+            </picture>
         </section>
 
         <section class="map">
@@ -685,6 +951,7 @@
         </div>
     </section>
 
+
     <footer class="footer">
         <button class="footer__btn">
             <span class="visually-hidden">наверх</span>
@@ -695,7 +962,7 @@
                     Санкт-Петербург, м. “Чернышевская”, ул. Маяковского, 37 В
                 </li>
                 <li class="footer__item">
-                    <a href="tel:+78123892209">+7 (812) 389-22-09</a>
+                    <a href="tel:+79291090808">+7 (929) 109-08-08</a>
                 </li>
                 <li class="footer__item">
                     <a href="mailto:balticakidssad@yandex.ru">balticakidssad@yandex.ru</a>
@@ -711,7 +978,8 @@
             </ul>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >

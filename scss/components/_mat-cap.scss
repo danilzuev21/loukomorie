@@ -1,0 +1,170 @@
+.mat-cap {
+    max-width: 1076px;
+    margin: 0 auto;
+    &__wrapper {
+        position: relative;
+        padding-top: 66px;
+        height: 849px;
+        background-image:url('./images/png/bg-mat-cap-mob.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 738px;
+            margin-bottom: 175px;
+        }
+
+        li {
+            position: relative;
+            padding-top: 87px;
+            margin-bottom: 32px;
+            max-width: 254px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+
+            color: #FFFFFF;
+            &::before {
+                content: "";
+
+                position: absolute;
+                top:-9px;
+                left:50%;
+
+                display: block;
+                width: 70px;
+                height: 70px;
+
+                background-image: url("./images/png/icon-mat-cap-1.png");
+                background-repeat: no-repeat;
+                transform: translate(-50%)
+            }
+        }
+        li:nth-child(1) {
+            &::before {
+                width: 70px;
+                height: 70px;
+
+                background-image: url("./images/png/icon-mat-cap-1.png");
+            }
+        }
+        li:nth-child(2) {
+            margin-left: 50px;
+            &::before {
+                width: 63px;
+                height: 63px;
+
+                background-image: url("./images/png/icon-mat-cap-2.png");
+            }
+        }
+        li:nth-child(3) {
+            margin-left: 107px;
+            &::before {
+                width: 81px;
+                height: 70px;
+
+                background-image: url("./images/png/icon-mat-cap-3.png");
+            }
+        }
+        button {
+            max-width: 298px;
+            z-index: 99999;
+        }
+        &::before {
+            content: "";
+
+            position: absolute;
+            bottom:74px;
+            left:0;
+
+            display: block;
+            width: 349px;
+            height: 275px;
+
+            background-image: url("./images/png/mama.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+
+
+@media (min-width: $screen-table) {
+    .mat-cap {
+        &__wrapper {
+            height: 549px;
+            background-image:url('./images/png/bg-mat-cap-dest.png');
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-around;
+                margin-bottom: 42px;
+            }
+            li {
+                margin-bottom: 0;
+            }
+            li:nth-child(2) {
+                margin-left: 0;
+            }
+            li:nth-child(3) {
+                margin-left: 0;
+            }
+            &::before {
+                content: "";
+    
+                position: absolute;
+                bottom:0;
+                left: -116px;
+    
+                display: block;
+                width: 483px;
+                height: 301px;
+    
+                background-image: url("./images/png/mama-dest.png");
+                background-repeat: no-repeat;
+            }
+        }
+        &__list {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &__item {
+            max-width: 510px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media (min-width: $screen-desktop) {
+    .mat-cap {
+        &__wrapper {
+            height: 378px;
+            ul {
+                margin-left: auto;
+            }
+            button {
+                margin-left: 28%;
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width: $screen-table) {
+}
+
+  
+@media (min-width: $screen-desktop) {
+
+}
+  

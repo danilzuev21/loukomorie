@@ -1,4 +1,5 @@
 .feedback {
+    
     &__list {
         margin-bottom: 42px;
         display: flex;
@@ -7,14 +8,38 @@
         align-items: center;
     }
     &__text {
+        max-width: 268px;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 135.4%;
-        /* or 32px */
+        font-size: 20px;
+        line-height: 172.9%;
+        /* or 35px */
+        
+        text-align: center;
+        
+        color: #333333;
+    }
+    &__text-2 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 172.9%;
+        /* or 35px */
+
+        text-align: center;
+        text-decoration: underline;
+
+        /* 1 */
+    } 
+    &__text-1 {
+        font-family: 'Amatic SC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 102.6%;
+        /* or 51px */
 
         text-align: center;
 
-        color: #333333;
+        color: #56B7AE;
     }
     a {
         font-weight: 700;
@@ -22,6 +47,72 @@
         line-height: 135.4%;
 
         color: #09805D;
+    }
+    &__social {
+        h2 {
+            margin-bottom: 42px;
+            font-family: 'Amatic SC';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 63px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #56B7AE;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li:first-child {
+            margin-right: 12px;
+        }
+    }
+
+}
+
+.card-news {
+    margin: 0 auto;
+    background-image: url('./images/png/bg-card-news.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 510px;
+    height: 285px;
+    border-radius: 20px;
+    div{
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+    }
+    p {
+        max-width: 300px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 26px;
+
+        color: #FFFFFF;
+    }
+    a {
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #FFFFFF;
+        background: #FD8342;
+        border-radius: 20px 0px 0px 0px;
     }
 }
 
@@ -31,31 +122,81 @@
 
         }
         &__text {
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 41px;
+                // font-weight: 400;
+                // font-size: 30px;
+                // line-height: 41px;
         }
-        a {
-            font-size: 30px;
-            line-height: 41px;
-        }
+        // a {
+        //     font-size: 30px;
+        //     line-height: 41px;
+        // }
     }
     
 }
 
-  
+
 @media (min-width: $screen-desktop) {
     .feedback {
         
-        &__bg {
-            padding-top: 93px;
-            width: 1000px;
-            height: 514px;
-            margin: 0 auto;
-            background-image: url("./images/svg/fb.svg");
-            background-repeat: no-repeat;
-            background-position: 43px 1px;
+        &__text {
+            max-width: 100%;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 172.9%;
+            /* or 35px */
+
+            text-align: center;
+
+            color: #333333; 
+        }
+        &__text-1 {
+            max-width: 402px;
+        }
+        &__text-2 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 172.9%;
+            /* or 35px */
+    
+            text-align: center;
+            text-decoration: underline;
+    
+            /* 1 */
+        } 
+    }
+    .card-news {
+        height: 385px;
+        p {
+            font-size: 18px;
         }
     }
 }
-  
+
+.icon {
+    position: absolute;
+    top:0;
+
+}
+
+.icon-1 {
+    top: 215px;
+    left: 10%;
+
+}
+.icon-2 {
+    right: 10%;
+    top: 319px; 
+}
+
+@media (min-width: $screen-desktop) {
+    .icon-1 {
+        top: 45px;
+        left: 50%;
+        transform: translate(-50%);
+    
+    }
+    .icon-2 {
+        left: 19%;
+        top: 276px;
+    }
+}

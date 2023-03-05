@@ -1,0 +1,107 @@
+.roboxod {
+    position: relative;
+    padding-top: 30px;
+    background: url("./images/png/bg-roboto-mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__logo {
+        margin-bottom: 30px;
+        img {
+            position: relative;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-family: 'Amatic SC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 76px;
+        /* identical to box height */
+        
+        text-align: center;
+        
+        /* #FFFFFF */
+        
+        color: #FFFFFF;
+    }
+    &__text {
+        margin-bottom: 31px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        /* or 22px */
+        
+        text-align: center;
+        
+        /* #FFFFFF */
+        
+        color: #FFFFFF;
+    }
+    &__block1 {
+        margin-bottom: 112px;
+    }
+    button {
+        width: 320px;
+        height: 62px;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .roboxod {
+        background: url("./images/png/bg-roboto-dest.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__logo {
+            padding-left: 196px;
+        }
+        .foto__btn-wrap {
+            top: 1153px;
+            z-index: 999;
+        }
+    }
+}
+@media (min-width: $screen-desktop) {
+    .roboxod {
+        padding-bottom: 129px;
+
+        &__block1 {
+            margin-bottom:0;
+            padding-bottom: 68px;
+        }
+        &__title {
+            margin-bottom: 20px;
+            font-family: 'Amatic SC';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 76px;
+            /* identical to box height */
+            
+            text-align: left;
+            
+            /* #FFFFFF */
+            
+            color: #FFFFFF;
+        }
+        &__text {
+            margin-bottom: 31px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            /* or 22px */
+            
+            text-align: left;
+            
+            /* #FFFFFF */
+            
+            color: #FFFFFF;
+        }
+        .foto__btn-wrap {
+            top: 1019px;
+        }
+        button {
+            margin-right: auto;
+        }
+    }
+}

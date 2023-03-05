@@ -260,3 +260,119 @@
   }
   
 }
+
+.bg-cirgle {
+  position: relative;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -80px;
+    left: -88px;
+
+
+    display: block;
+    width: 227px;
+    height: 224px;
+
+    background-image: url("./images/png/bg-circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+.bg-cirgle-2 {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    display: block;
+    width: 100%;
+    max-width: 443px;
+    height: 255px;
+    background-image: url(./images/png/bg-circle-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+
+.el-line {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    display: block;
+    width: 376px;
+    height: 25px;
+    background-image: url(./images/png/line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    transform: translate(-50%);
+  }
+}
+.el-green {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    display: block;
+    width: 376px;
+    height: 25px;
+    background-image: url(./images/png/str-green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  
+  .bg-cirgle-big {
+    position: relative;
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -93px;
+      right: 0;
+      
+
+      display: block;
+      width: 751px;
+      height: 712px;
+      
+      background-image: url("./images/png/bg-circle.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+    }
+  }
+  .bg-cirgle {
+    position: relative;
+    &::before {
+      content: "";
+  
+      position: absolute;
+      top: -48px;
+      left: -56px;
+  
+  
+      display: block;
+      width: 227px;
+      height: 224px;
+  
+      background-image: url("./images/png/bg-circle.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+    }
+  }
+}
