@@ -1,6 +1,6 @@
 .hero {
     // padding-top: 100px;
-    max-height: 1684px;
+    max-height: 1457px;
     padding-bottom: 133px;
     background:url("./images/svg/bg-hero.svg");
     background-size: cover;
@@ -564,8 +564,9 @@
         }
         &__wrap-2 {
             img {
-                position: static;
+                position: relative;
                 z-index: 1;
+                top:0
             }
         }
         &__wrap-3 {

@@ -601,7 +601,7 @@ input[type=radio].visually-hidden {
   }
 }
 .hero {
-  max-height: 1684px;
+  max-height: 1457px;
   padding-bottom: 133px;
   background: url("./images/svg/bg-hero.svg");
   background-size: cover;
@@ -1027,8 +1027,9 @@ input[type=radio].visually-hidden {
     display: none !important;
   }
   .hero__wrap-2 img {
-    position: static;
+    position: relative;
     z-index: 1;
+    top: 0;
   }
   .hero__wrap-3 {
     max-width: 1076px;
@@ -1334,6 +1335,9 @@ input[type=radio].visually-hidden {
 @media (min-width: 768px) {
   .our-team {
     padding-top: 321px;
+  }
+  .our-team__title {
+    margin-bottom: 98px;
   }
   .our-team .foto__btn-wrap {
     top: 577px;
@@ -2458,7 +2462,7 @@ input[type=radio].visually-hidden {
 
 .pos-d {
   right: 0;
-  top: 0;
+  top: -18px;
 }
 
 .pos-f {
@@ -2604,4 +2608,7 @@ input[type=radio].visually-hidden {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+.z99999 {
+  z-index: 10000000000000000000000000000000000000000000000;
 }/*# sourceMappingURL=main.css.map */

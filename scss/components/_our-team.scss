@@ -34,7 +34,11 @@
 @media (min-width: $screen-table) {
 
     .our-team{
+
         padding-top: 321px;
+        &__title {
+            margin-bottom: 98px;
+        }
         .foto__btn-wrap {
             top: 577px;
             width: 90%;
