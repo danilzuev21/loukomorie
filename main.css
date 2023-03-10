@@ -2129,6 +2129,7 @@ input[type=radio].visually-hidden {
   background-image: url("./images/svg/modal-bg-fb-mob.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
 }
 
 @media (min-width: 768px) {
@@ -2137,6 +2138,7 @@ input[type=radio].visually-hidden {
     background-image: url("./images/svg/modal-bg-fb.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
   }
 }
 .footer {
