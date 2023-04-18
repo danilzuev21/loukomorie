@@ -13,12 +13,6 @@ $admin_emails  = [
 $form_subject = 'Сообщение с сайта baltica-kids.ru';
 $message = '';
 
-$formTargetToSubject = [
-    'Навыки соискателя' => 'резюме',
-    'Сотрудничество/услуга' => 'сотрудничество/услуга',
-    'Вопросы' => 'вопросы',
-];
-
 $params = $method === 'POST' ? $_POST : ($method ===  'GET' ? $_GET : []);
 $notAllowedKeys = ["project_name", "admin_email", "form_subject"];
 
